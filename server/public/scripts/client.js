@@ -7,7 +7,7 @@ myApp.config(function($routeProvider) {
       controller: 'UserController as uc',
     }).when('/repos', {
       templateUrl: '/views/repos.html',
-      controller: 'UserController as uc'
+      controller: 'RepoController as rc'
     }).otherwise({
       template: '<h1>404</h1>'
   });
