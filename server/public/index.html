@@ -3,6 +3,8 @@
   <head>
     <meta charset="utf-8">
     <title>Projects</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <link rel="stylesheet" href="styles/style.css">    
     <script src="vendors/angular.min.js" charset="utf-8"></script>
     <script src="vendors/angular-route.min.js" charset="utf-8"></script>
     <script src="scripts/client.js" charset="utf-8"></script>
@@ -10,9 +12,13 @@
     <script src="scripts/github.service.js" charset="utf-8"></script>
   </head>
   <body ng-app="myApp">
-    <h1>Hello World</h1>
-    <main ng-view>
-
-    </main>
+      <nav class="navbar navbar-light bg-light">
+          <span class="navbar-text">
+              <a class="navbar-brand" href="#!user">User Profile</a>
+              <a class="navbar-brand" href="#!repos">Repos</a>
+          </span>
+      </nav>
+    <ng-view></ng-view>
+    
   </body>
 </html>

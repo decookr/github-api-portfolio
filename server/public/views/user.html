@@ -1,4 +1,19 @@
+<h2>User Info</h2>
 <div>
-    <div>{{uc.user.data}}</div>
-    <div>{{uc.repos.data}}</div>
+    <div>
+        <ul>
+            <li>
+                Username: {{uc.user.data.login}}
+            </li>
+            <li>
+                <img ng-src="{{uc.user.data.avatar_url}}" width="150px">
+            </li>
+            <li>
+                    GitHub URL: {{uc.user.data.html_url}}
+            </li>
+        </ul>
+        <pre>{{uc.user.data || json}}</pre>
+
+    </div>
+    <!-- <div>{{uc.repos.data}}</div> -->
 </div>
