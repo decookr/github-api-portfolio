@@ -1,4 +1,4 @@
-# Weekend 6 HW
+# GitHub API and Deployment
 ## Start a Portfolio
 
 ### Objectives
