@@ -1,25 +1,24 @@
 <div class="container">
     <div class="jumbotron">
         <h2>My Profile</h2>
+        <img ng-src="{{uc.user.data.avatar_url}}" width="150px">
+        
     </div>
     <ul>
         <li>
-            {{uc.user.data.name}}
+            <strong>Name: </strong>{{uc.user.data.name}}
         </li>
         <li>
-            Username: {{uc.user.data.login}}
+            <strong>Username: </strong>{{uc.user.data.login}}
         </li>
         <li>
-            {{uc.user.data.location}}
+           <strong>Location: </strong> {{uc.user.data.location}}
         </li>
         <li>
-            {{uc.user.data.company}}
+            <strong>Company: </strong>{{uc.user.data.company}}
         </li>
         <li>
-            GitHub URL: {{uc.user.data.html_url}}
-        </li>
-        <li>
-            <img ng-src="{{uc.user.data.avatar_url}}" width="150px">
+           <strong>GitHub URL: </strong> {{uc.user.data.html_url}}
         </li>
 
     </ul>
